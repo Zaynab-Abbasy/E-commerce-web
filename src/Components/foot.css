@@ -1,0 +1,56 @@
+#msg
+{
+    color: white;
+    background-color: rgb(128, 0, 0);
+    font-family: "Lora", serif;
+     height: 40px;
+     width:100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    font-family: 'Lora', serif;
+    padding: 20px 0; 
+  }
+  
+  .thb-widget-title {
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .ab {
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: large;
+    text-decoration: none;
+  } 
+  
+  .row
+  {
+    background-color: rgb(210, 180, 140);
+    }
+    .title
+    {
+        font-family:'lora';
+        font-weight: bold;
+        font-size: x-large;
+    }
+    #email
+    {
+        background-color: #c0c0c0;
+        border-color: rgb(128, 0, 0);
+        border-radius: 0;
+        margin-right: 8px;
+        
+    }
+  .btn
+  {
+    background-color: #c0c0c0;
+    border-radius: 0;
+    border-color:rgb(128, 0, 0) ;
+  }

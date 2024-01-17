@@ -1,0 +1,49 @@
+/* Header.css */
+
+.header {
+  text-align: center;
+  padding: 0px;
+  font-family: "Lora", serif;
+  font-size: large;
+}
+
+.navbar {
+  background-color: rgb(210, 180, 140);
+  color: white;
+  font-family: "Lora", serif; /* Fix the font family */
+}
+
+.icon {
+  font-size: 1em;
+  margin: 15px;
+}
+.marquee-container {
+  height: 40px;
+  overflow: hidden;
+  background-color: rgb(128, 0, 0);
+}
+.marquee-text {
+  color: white;
+  white-space: nowrap;
+  -webkit-animation: marqueeAnimation 17s linear infinite;
+  animation: marqueeAnimation 17s linear infinite;
+  display: inline-block;
+}
+
+@-webkit-keyframes marqueeAnimation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
