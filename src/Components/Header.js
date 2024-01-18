@@ -13,16 +13,18 @@ const Header = () => {
   return (
     <div className="header">
       <div className="marquee-container">
-        <p className="marquee-text">
-          Free shipping nationwide
-        </p>
+        <p className="marquee-text">Free shipping nationwide</p>
       </div>
 
       <nav className="navbar navbar-expand-lg  fixed">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <img
+            src={require("../images/logo.png")}
+            alt="Logo"
+            height={150}
+            width={150}
+          />
+
           <button
             className="navbar-toggler"
             type="button"
