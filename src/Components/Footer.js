@@ -5,7 +5,7 @@ import "./foot.css";
 
 const Footer = () => {
   return (
-    <footer className="fixed-bottom">
+    <footer className="fixed-bottom" id="foot">
       <div className="container-fluid" id="msg">
         <p>
           Create Lasting Memories in Spaces Adorned with Our Signature

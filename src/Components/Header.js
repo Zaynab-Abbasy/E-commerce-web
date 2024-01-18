@@ -6,10 +6,18 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-import React from "react";
+import React,{useState} from "react";
 import "./Header.css";
+import Login from "./Login";
 
 const Header = () => {
+
+  const [showLogin, setShowLogin] = useState(false);
+
+  const toggleLogin = () => 
+  {
+    setShowLogin(!showLogin);
+  };
   return (
     <div className="header">
       <div className="marquee-container">
@@ -169,9 +177,10 @@ const Header = () => {
           </div>
         </div>
         <FontAwesomeIcon icon={faSearch} className="icon" />
-        <FontAwesomeIcon icon={faUser} className="icon" />
+        <FontAwesomeIcon icon={faUser} className="icon" onClick={toggleLogin} />
         <FontAwesomeIcon icon={faHeart} className="icon" />
         <FontAwesomeIcon icon={faCartShopping} className="icon" />
+        {showLogin && <Login show={showLogin} handleClose={toggleLogin}/>}
       </nav>
     </div>
   );

@@ -6,6 +6,7 @@
   width: 100%;
   overflow: hidden;
   text-align: center;
+  z-index: 900;
 }
 
 .footer {
@@ -13,6 +14,7 @@
   color: white;
   font-family: "Lora", serif;
   padding: 20px 0;
+  z-index: 0;
 }
 
 .thb-widget-title {
@@ -20,6 +22,7 @@
   font-family: "Lora", serif;
   font-size: x-large;
   font-weight: bold;
+  z-index:900;
 }
 
 .ab {
@@ -32,6 +35,7 @@
 
 .row {
   background-color: rgb(210, 180, 140);
+  z-index: 900;
 }
 .title {
   font-family: "lora";
@@ -43,9 +47,14 @@
   border-color: rgb(128, 0, 0);
   border-radius: 0;
   margin-right: 8px;
+  color: black;
 }
 .btn {
   background-color: #c0c0c0;
   border-radius: 0;
   border-color: rgb(128, 0, 0);
+}
+#foot
+{
+  z-index: 0;
 }
