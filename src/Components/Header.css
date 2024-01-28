@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  background-color: rgb(210, 180, 140);
+  background-color: rgba(210, 180, 140, 0.785);
   color: black;
   font-family: "Lora", serif;
 }
@@ -73,15 +73,16 @@
   z-index: 2;
 }
 
-
-
 .popup.active {
   display: flex;
 }
-.login-btn:hover,
-.btn:hover {
-  background-color: rgb(128, 0, 0);
-  color: white; /* Change text color when hovering */
+.button {
+  background-color: black;
+  color: white; /* Set text color to white */
+  border-color: black; /* Set border color to black */
 }
 
-
+.button:hover {
+  background-color: rgb(128, 0, 0);
+  border-color: rgb(128, 0, 0);
+}

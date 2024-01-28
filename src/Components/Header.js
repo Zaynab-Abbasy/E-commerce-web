@@ -6,16 +6,14 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import Login from "./Login";
+import Login from "./Auth/Login";
 
 const Header = () => {
-
   const [showLogin, setShowLogin] = useState(false);
 
-  const toggleLogin = () => 
-  {
+  const toggleLogin = () => {
     setShowLogin(!showLogin);
   };
   return (
@@ -180,7 +178,7 @@ const Header = () => {
         <FontAwesomeIcon icon={faUser} className="icon" onClick={toggleLogin} />
         <FontAwesomeIcon icon={faHeart} className="icon" />
         <FontAwesomeIcon icon={faCartShopping} className="icon" />
-        {showLogin && <Login show={showLogin} handleClose={toggleLogin}/>}
+        {showLogin && <Login show={showLogin} handleClose={toggleLogin} />}
       </nav>
     </div>
   );

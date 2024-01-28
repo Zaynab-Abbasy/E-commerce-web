@@ -1,0 +1,41 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999;
+  width: 6600px; /* Adjust width */
+  max-width: 5000px; /* Adjust maximum width a */
+  padding: 20px;
+  border-radius: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.popup-inner {
+  background: white;
+  border-radius: 8px;
+  /* padding: 20px; */
+}
+.font {
+  font-family: "Lora", serif;
+}
+.form-group {
+  margin-bottom: 20px; /* Add spacing between form groups */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Add spacing between input groups */
+}
+
+.input-group label {
+  width: 120px; /* Fixed width for labels */
+  margin-right: 10px; /* Add some spacing between label and input */
+}
+
+.input-group input {
+  flex: 1; /* Take up remaining space */
+}
