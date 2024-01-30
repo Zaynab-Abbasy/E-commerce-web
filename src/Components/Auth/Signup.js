@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import "../signup.css";
-import signupImage from "../../images/signup.jpg"; // Import the image
+
 
 const Signup = ({ show, handleClose }) => {
   return (

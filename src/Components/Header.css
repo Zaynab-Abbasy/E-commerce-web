@@ -1,4 +1,5 @@
 /* Header.css */
+
 /*msg*/
 .header {
   text-align: center;
@@ -14,8 +15,10 @@
   font-family: "Lora", serif;
 }
 
+
+
 .icon {
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 15px;
 }
 .marquee-container {
@@ -29,6 +32,7 @@
   -webkit-animation: marqueeAnimation 17s linear infinite;
   animation: marqueeAnimation 17s linear infinite;
   display: inline-block;
+  font-size: smaller;
 }
 
 @-webkit-keyframes marqueeAnimation {
@@ -48,6 +52,7 @@
     transform: translateX(-100%);
   }
 }
+
 
 .popup {
   /* Login.css */
@@ -86,3 +91,4 @@
   background-color: rgb(128, 0, 0);
   border-color: rgb(128, 0, 0);
 }
+

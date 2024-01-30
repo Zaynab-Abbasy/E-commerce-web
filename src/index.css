@@ -1,7 +1,14 @@
+/* App.css or index.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your existing styles */
+
 .navbar navbar-expand-lg bg-body-tertiary fixed-top
 {
   background-color: '#C19A6B !important', 
    
   
 }
-

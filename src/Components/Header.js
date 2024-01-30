@@ -17,6 +17,7 @@ const Header = () => {
     setShowLogin(!showLogin);
   };
   return (
+    <div className="header-container">
     <div className="header">
       <div className="marquee-container">
         <p className="marquee-text">Free shipping nationwide</p>
@@ -180,6 +181,7 @@ const Header = () => {
         <FontAwesomeIcon icon={faCartShopping} className="icon" />
         {showLogin && <Login show={showLogin} handleClose={toggleLogin} />}
       </nav>
+    </div>
     </div>
   );
 };

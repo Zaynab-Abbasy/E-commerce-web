@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Login from "./Components/Auth/Login";
 import Signup from "./Components/Auth/Signup";
+import 'tailwindcss/tailwind.css';
 
 function App() {
   return (

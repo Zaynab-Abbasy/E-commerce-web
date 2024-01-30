@@ -5,6 +5,7 @@ import "./foot.css";
 
 const Footer = () => {
   return (
+    <div className="container">
     <footer className="fixed-bottom" id="foot">
       <div className="container-fluid" id="msg">
         <p>
@@ -111,6 +112,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </div>
   );
 };
 
