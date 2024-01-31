@@ -1,92 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import "../signup.css";
+import { Form, Button } from "react-bootstrap";
+import "../Auth/Auth.css";
 
+const Signup = () => {
+  // State to manage form input values
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
-const Signup = ({ show, handleClose }) => {
+  // Function to update form input values as user types
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Function to handle form submission
+  const handleSignup = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    // Log form data to console
+    console.log(formData);
+    // Reset form data
+    setFormData({
+      username: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+    });
+  };
+
   return (
-    <div className={`popup ${show ? "active" : ""}`}>
-      <div className="popup-inner">
-        <div className="log_res">
-          <form className="font">
-            <h2>Welcome</h2>
-            <p>Create an account</p>
-
-            <div className="horizontal-group">
-              <div className="form-group">
-                <div className="input-group">
-                  <label htmlFor="inputUserName">User Name</label>
-                  <input
-                    type="text"
-                    name="username"
-                    className="form-control"
-                    id="inputUserName"
-                    placeholder="Enter User Name"
-                    required
-                  />
-                </div>
-                <div className="input-group">
-                  <label htmlFor="inputEmail">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    className="form-control"
-                    id="inputEmail"
-                    placeholder="Enter Email"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="horizontal-group">
-              <div className="form-group">
-                <div className="input-group">
-                  <label htmlFor="inputPassword">Password</label>
-                  <input
-                    type="password"
-                    name="password"
-                    className="form-control"
-                    id="inputPassword"
-                    placeholder="Enter Password"
-                    required
-                  />
-                </div>
-                <div className="input-group">
-                  <label htmlFor="inputConfirmPassword">Confirm Password</label>
-                  <input
-                    type="password"
-                    name="confirmPassword"
-                    className="form-control"
-                    id="inputConfirmPassword"
-                    placeholder="Confirm Password"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-
-            <Button className="button" type="submit">
-              Sign Up
-            </Button>
-
-            <p>
-              By clicking "Sign Up" you agree to the our terms and conditions.
-              <br />
-              To see how we may use your information, take a look at our privacy
-              policy.
-            </p>
-
-            <p>
-              Already have an account? <Link to="/login">Sign In</Link>
-            </p>
-
-            <Button className="button" onClick={handleClose}>
-              Close
-            </Button>
-          </form>
-        </div>
+    <div className="auth-page">
+      <h2>Sign Up</h2>
+      <Form onSubmit={handleSignup}>
+        <Form.Group className="mb-3" controlId="formUserName">
+          <Form.Control
+            type="text"
+            name="username"
+            placeholder="Enter User Name"
+            value={formData.username}
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formEmail">
+          <Form.Control
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formPassword">
+          <Form.Control
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formConfirmPassword">
+          <Form.Control
+            type="password"
+            name="confirmPassword"
+            placeholder="Confirm Password"
+            value={formData.confirmPassword}
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Button className="button" type="submit">
+          Sign Up
+        </Button>
+      </Form>
+      <div className="signup-link">
+        <p>
+          Already have an account? <Link to="/login">Sign In</Link>
+        </p>
       </div>
     </div>
   );

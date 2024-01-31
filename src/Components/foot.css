@@ -19,7 +19,7 @@
   z-index: 0;
 }
 
-.thb-widget-title {
+title {
   color: black;
   font-family: "Lora", serif;
   font-size: x-large;
@@ -59,8 +59,15 @@
   border-radius: 0;
   color: white;
 }
-
-#foot {
-  z-index: 0;
+#foot
+{
+   bottom: 0;
+   height: 2em;
+   left:0;
+   position: relative;
+   width: 100%;
+   
 }
+
+
 

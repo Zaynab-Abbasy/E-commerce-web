@@ -1,0 +1,22 @@
+/* home.css */
+
+.title-holder
+{
+    font-family: "Lora","serif";
+    font-size: larger;
+    text-align: center;
+}
+.holder
+{
+background-color: white;
+font-family: "lora,serif";
+
+}
+.btn
+{
+    background-color: rgb(128,0,0);
+    font-family: "lora,serif";
+    color: white;
+}
+  
+  

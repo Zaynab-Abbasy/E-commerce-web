@@ -5,6 +5,7 @@ import {
   faSearch,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 import "./Header.css";
@@ -17,8 +18,8 @@ const Header = () => {
     setShowLogin(!showLogin);
   };
   return (
-    <div className="header-container">
-    <div className="header">
+    <div className="header-container" >
+    <div className="header" >
       <div className="marquee-container">
         <p className="marquee-text">Free shipping nationwide</p>
       </div>
@@ -28,8 +29,8 @@ const Header = () => {
           <img
             src={require("../images/logo.png")}
             alt="Logo"
-            height={150}
-            width={150}
+            height={100}
+            width={100}
           />
 
           <button
@@ -176,7 +177,9 @@ const Header = () => {
           </div>
         </div>
         <FontAwesomeIcon icon={faSearch} className="icon" />
-        <FontAwesomeIcon icon={faUser} className="icon" onClick={toggleLogin} />
+        <Link to="/login">
+        <FontAwesomeIcon icon={faUser} className="icon" />
+      </Link>
         <FontAwesomeIcon icon={faHeart} className="icon" />
         <FontAwesomeIcon icon={faCartShopping} className="icon" />
         {showLogin && <Login show={showLogin} handleClose={toggleLogin} />}

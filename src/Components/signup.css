@@ -3,10 +3,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 9999;
-  width: 6600px; /* Adjust width */
-  max-width: 5000px; /* Adjust maximum width a */
+  width: 6600px; 
+  max-width: 5000px;
   padding: 20px;
   border-radius: 20px;
   height: 100%;

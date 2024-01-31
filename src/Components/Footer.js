@@ -5,9 +5,9 @@ import "./foot.css";
 
 const Footer = () => {
   return (
-    <div className="container">
-    <footer className="fixed-bottom" id="foot">
-      <div className="container-fluid" id="msg">
+    
+    <footer className="fixed-bottom " id="foot">
+      <div  id="msg">
         <p>
           Create Lasting Memories in Spaces Adorned with Our Signature
           Furniture!!!
@@ -24,10 +24,10 @@ const Footer = () => {
           />
         </div>
 
-        <div className="col-lg-3">
+        < div className="col-lg-5">
           {/* Company Information */}
-          <div className="widget">
-            <div className="thb-widget-title">The Company</div>
+          
+            <div className="title">The Company</div>
             <ul>
               <li>
                 <a href="#" title="About us" className="ab">
@@ -50,13 +50,13 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          
         </div>
 
-        <div className="col-lg-3">
+        <div className="col-lg-5">
           {/* Information */}
-          <div className="widget">
-            <div className="thb-widget-title">Information</div>
+          
+            <div className="title">Information</div>
             <ul>
               <li>
                 <a href="#" title="Terms" className="ab">
@@ -81,38 +81,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        <div className="col-lg-2">
-          {/* Expanded Newsletter */}
-          <div className="title">Let's Stay Connected</div>
-          <div className="newsletter" style={{ width: "400px" }}>
-            <p>
-              As a valued member of Zeenat Interiors, we're excited to offer you
-              exclusive discounts. Don't miss out on the chance to snag premium
-              furniture at unbeatable prices!
-            </p>
-            <form>
-              <div className="form-row">
-                <div className="col-10">
-                  <div className="form-group d-flex">
-                    <input
-                      type="email"
-                      className="form-control form-control-sm"
-                      id="email"
-                      placeholder="Your Email"
-                    />
-                    <button type="submit" className="bn">
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </footer>
-    </div>
+      </footer>
+    
+    
   );
 };
 
