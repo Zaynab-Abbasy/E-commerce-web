@@ -7,11 +7,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import "./Header.css";
 import Login from "./Auth/Login";
 
 const Header = () => {
+
+  
   const [showLogin, setShowLogin] = useState(false);
 
   const toggleLogin = () => {
@@ -29,8 +31,8 @@ const Header = () => {
           <img
             src={require("../images/logo.png")}
             alt="Logo"
-            height={100}
-            width={100}
+            height={50}
+            width={50}
           />
 
           <button
@@ -63,7 +65,7 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/dinning">
                       Tables
                     </a>
                   </li>

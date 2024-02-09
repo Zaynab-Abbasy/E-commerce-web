@@ -8,6 +8,7 @@ import Login from "./Components/Auth/Login";
 import Home from "./Components/Home";
 import Signup from "./Components/Auth/Signup";
 import 'tailwindcss/tailwind.css';
+import Dinning from "./Components/Categories/Dinning";
 
 function App() {
   return (
@@ -16,10 +17,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/dinning" element={<Dinning />} />
       </Routes>
-      <Footer />
+      <Footer/>
     </BrowserRouter>
   );
 }

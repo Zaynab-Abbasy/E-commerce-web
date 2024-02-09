@@ -44,6 +44,7 @@ title {
   font-family: "lora";
   font-weight: bold;
   font-size: x-large;
+  margin-top: 0;
 }
 
 #email {
@@ -62,12 +63,30 @@ title {
 #foot
 {
    bottom: 0;
-   height: 2em;
    left:0;
    position: relative;
    width: 100%;
    
 }
+
+
+.logo-container {
+  height: 160px; /* Set the height to match the other divs */
+  
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo {
+  max-height: 100px;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  
+ 
+}
+
+
 
 
 
