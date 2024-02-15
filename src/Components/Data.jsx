@@ -22,7 +22,7 @@ const Data = [
         id: 3,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 688.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "4-person-Dining Tables",
         rating: 4.2
@@ -31,7 +31,7 @@ const Data = [
         id: 4,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 789.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "6-person-Dining Tables",
         rating: 4.2
@@ -40,7 +40,7 @@ const Data = [
         id: 5,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 1509.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "4-person-Dining Tables",
         rating: 4.2
@@ -49,7 +49,7 @@ const Data = [
         id: 6,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 56789.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining Tables",
         rating: 4.2
@@ -58,7 +58,7 @@ const Data = [
         id: 7,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 29009.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining chairs",
         rating: 4.2
@@ -67,7 +67,7 @@ const Data = [
         id: 8,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 9099.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining Tables",
         rating: 4.2
@@ -76,7 +76,7 @@ const Data = [
         id: 9,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 67899.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "6-person-Dining Tables",
         rating: 4.2
@@ -85,7 +85,7 @@ const Data = [
         id: 10,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 67549.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining Tables",
         rating: 4.2
@@ -94,7 +94,7 @@ const Data = [
         id: 11,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 1359.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining chairs",
         rating: 4.2
@@ -103,7 +103,7 @@ const Data = [
         id: 12,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 19329.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "4-person-Dining Tables",
         rating: 4.2
@@ -112,7 +112,7 @@ const Data = [
         id: 13,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 7799.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining Tables",
         rating: 4.2
@@ -121,7 +121,7 @@ const Data = [
         id: 14,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 7789.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining chairs",
         rating: 4.2
@@ -130,7 +130,7 @@ const Data = [
         id: 15,
         name: "Wooden Dining Table",
         description: "Solid wooden dining table with extendable feature",
-        price: 299.99,
+        price: 9099.99,
         image: "https://plus.unsplash.com/premium_photo-1661876380455-29b838b2a2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
         category: "Dining Tables",
         rating: 4.2
