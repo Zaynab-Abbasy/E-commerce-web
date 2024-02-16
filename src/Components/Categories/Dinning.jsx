@@ -1,10 +1,9 @@
-// Dinning.js
 import React, { useState, useEffect } from "react";
 import Data from "../Data";
 import Card from "./Card";
 import Buttons from "./Buttons";
 
-const Dinning = () => {
+const Dining = () => {
   const [items, setItems] = useState(Data);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6; // Number of items per page
@@ -27,9 +26,6 @@ const Dinning = () => {
     setItems(sortedItems);
   };
 
-  // Calculate total number of pages
-  const totalPages = Math.ceil(items.length / itemsPerPage);
-
   // Function to filter items based on category and pagination
   const filterItems = (cat) => {
     const newItems =
@@ -46,28 +42,32 @@ const Dinning = () => {
   // Function to handle page navigation
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  // Function to handle color change
+  const handleColorChange = (itemId, color) => {
+    setItems((prevItems) =>
+      prevItems.map((item) =>
+        item.id === itemId
+          ? {
+              ...item,
+              selectedColor: color,
+            }
+          : item
+      )
+    );
+  };
+
   return (
     <div className="container-fluid" style={{ backgroundColor: "white" }}>
+      <h1 className="text-center" style={{ fontFamily: "Lora ,serif"  }}><strong>Dining </strong></h1>
+      <Buttons
+        menuItems={menuItems}
+        filterItems={filterItems}
+        sortProductsByPrice={sortProductsByPrice}
+      />
+      <Card items={currentItems} handleColorChange={handleColorChange}  style={{ backgroundColor: "white" }}/>
       <div className="row" style={{ backgroundColor: "white" }}>
-        <h1
-          className="text-center col-12 fw-bold mt-3 mb-5"
-          style={{ backgroundColor: "white", fontFamily: "Lora, Serif" }}
-        >
-          Dinning
-        </h1>
-        <div className="col-md-6">
-          <Buttons
-            menuItems={menuItems}
-            filterItems={filterItems}
-            setItems={setItems}
-            sortProductsByPrice={sortProductsByPrice}
-          />
-        </div>
-      </div>
-      <Card items={currentItems} />
-      <div className="row" style={{ backgroundColor: "white" }}>
-        <ul className="pagination justify-content-center">
-          {Array.from({ length: totalPages }, (_, index) => (
+        <ul className="pagination justify-content-center" style={{ backgroundColor: "white" }}>
+          {Array.from({ length: Math.ceil(items.length / itemsPerPage) }, (_, index) => (
             <li
               key={index}
               className={`page-item ${
@@ -94,4 +94,4 @@ const Dinning = () => {
   );
 };
 
-export default Dinning;
+export default Dining;
