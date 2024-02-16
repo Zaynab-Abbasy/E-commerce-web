@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Card({ items }) {
   // Check if items is an array
@@ -7,13 +7,16 @@ function Card({ items }) {
   }
 
   return (
-    <div className="container" style={{ backgroundColor: 'white' }}>
-      <div className="row justify-content-center" style={{ backgroundColor: 'white' }}>
+    <div className="container" style={{ backgroundColor: "white" }}>
+      <div
+        className="row justify-content-center"
+        style={{ backgroundColor: "white" }}
+      >
         {items.map((val) => (
           <div key={val.id} className="col-md-4 col-sm-6 card my-3 border-0">
             <div className="card-img-top text-center">
               <img src={val.image} alt="" className="w-75" />
-              <div className="card-body" style={{ backgroundColor: 'white' }}>
+              <div className="card-body" style={{ backgroundColor: "white" }}>
                 <div className="card-title fw-bold fs-4 text-center">
                   {val.name} <br /> {val.price}
                 </div>
