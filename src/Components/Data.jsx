@@ -4,6 +4,7 @@ const Data = [
     name: "Modern Sofa",
     description: "Stylish and comfortable modern sofa with fabric upholstery",
     price: 599.99,
+    quantity:10,
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -12,6 +13,7 @@ const Data = [
       "#3C0008": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZ1cm5pdHVyZSUyMGRpbm5pbmd8ZW58MHx8MHx8fDA%3D"
     },
       category: "Dining chairs",
+      sizes:["6-person-dinning","4-person-dinning"],
     rating: 4.5,
   },
   {
@@ -19,6 +21,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 299.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -34,6 +38,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 688.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -49,6 +55,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 789.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -64,6 +72,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 1509.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -79,6 +89,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 56789.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -94,6 +106,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 29009.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -109,6 +123,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 9099.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -124,6 +140,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 67899.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -139,6 +157,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 67549.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -154,6 +174,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 1359.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -169,6 +191,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 19329.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -184,6 +208,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 7799.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -199,6 +225,8 @@ const Data = [
     name: "Wooden Dining Table",
     description: "Solid wooden dining table with extendable feature",
     price: 7789.99,
+    quantity:10,
+    sizes:["6-person-dinning","4-person-dinning"],
     colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {
@@ -214,6 +242,8 @@ const Data = [
      name: "Wooden Dining Table",
      description: "Solid wooden dining table with extendable feature",
      price: 9099.99,
+     quantity:10,
+     sizes:["6-person-dinning","4-person-dinning"],
      colors: ["#F5F5DC", "#5C4033", "#3C0008"],
     selectedColor: "#F5F5DC", // Initial selected color
     linkImg: {

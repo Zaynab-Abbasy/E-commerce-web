@@ -9,6 +9,7 @@ import Home from "./Components/Home";
 import Signup from "./Components/Auth/Signup";
 import 'tailwindcss/tailwind.css';
 import Dinning from "./Components/Categories/Dinning";
+import Product_details from "./Components/Single_product.js/Product_details";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-
+        <Route path="/product-details/:id" element={<Product_details />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dinning" element={<Dinning />} />
