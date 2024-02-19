@@ -62,7 +62,22 @@
   }
 }
 
+.basket-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
-
-
-
+.badge {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: -0px; /* Adjust right position as needed */
+  background-color: blue;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

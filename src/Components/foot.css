@@ -16,7 +16,8 @@
   color: white;
   font-family: "Lora", serif;
   padding: 20px 0;
-  z-index: 0;
+  
+  
 }
 
 title {
@@ -63,7 +64,7 @@ title {
 #foot
 {
    bottom: 0;
-   left:0;
+   margin-top: auto;
    position: relative;
    width: 100%;
    
@@ -85,7 +86,6 @@ title {
   
  
 }
-
 
 
 

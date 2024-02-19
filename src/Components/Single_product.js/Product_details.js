@@ -1,49 +1,39 @@
 import React from "react";
-import {
-  Card,
-  Row,
-  Col,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardText,
-  CardSubtitle,
-  Button,
-} from "react-bootstrap";
+import { Card, Row, Col, CardImg, CardBody, CardTitle, CardText, CardSubtitle, Button } from "react-bootstrap";
 import { FormGroup, Label } from "reactstrap";
 import { useProductView } from "./useProductView";
+import useBasket from "../Shop/useBasket";
 
-const ProductDetails = () => {
+const ProductDetails = ({ handleClick}) => {
   const {
+    id,
     items,
+    description,
     selectedColor,
     setSelectedColor,
     selectedCat,
     setSelectedCat,
     quantity,
-    handleQuantityChange,
-    getImages,
     increaseQuantity,
     decreaseQuantity,
+    getImages,
   } = useProductView();
 
-  console.log("items:", items); // Log items to check its value
+  console.log("Items:", items);
+  
+
+  
 
   if (!items) {
     return null;
   }
 
-  console.log("items.quantity:", items.quantity); // Log items.quantity to check its value
-
   return (
     <div>
-      <Card
-        className="product-details"
-        style={{ fontFamily: "Lora, Serif", backgroundColor: "white" }}
-      >
+      <Card className="product-details" style={{ fontFamily: "Lora, Serif", backgroundColor: "white" }}>
         <Row style={{ backgroundColor: "white" }}>
           <Col md="4">
-            <CardImg top width="100%" src={getImages(selectedColor)} alt="" />
+            <CardImg width="90%" src={getImages(selectedColor)} alt="" />
           </Col>
           <Col md="8">
             <CardBody>
@@ -59,20 +49,11 @@ const ProductDetails = () => {
               <CardSubtitle style={{ fontSize: "20px" }}>
                 <strong>Price: {items.price || "Price"}</strong>
               </CardSubtitle>
-              <CardSubtitle
-                style={{ paddingTop: "15px", paddingBottom: "0px" }}
-              >
+              <CardSubtitle style={{ paddingTop: "15px", paddingBottom: "0px" }}>
                 {items.quantity} items left
               </CardSubtitle>
               <FormGroup>
-                <Label
-                  for="sizeSelect"
-                  style={{
-                    paddingTop: "15px",
-                    paddingBottom: "0px",
-                    fontSize: "20px",
-                  }}
-                >
+                <Label for="sizeSelect" style={{ paddingTop: "15px", paddingBottom: "0px", fontSize: "20px" }}>
                   Select Size
                 </Label>
                 <div style={{ display: "flex", gap: "5px", marginTop: "5px" }}>
@@ -81,8 +62,7 @@ const ProductDetails = () => {
                       <Button
                         key={size}
                         style={{
-                          border:
-                            selectedCat === size ? "2px solid black" : "none",
+                          border: selectedCat === size ? "2px solid black" : "none",
                           width: "auto",
                         }}
                         onClick={() => setSelectedCat(size)}
@@ -93,7 +73,9 @@ const ProductDetails = () => {
                 </div>
               </FormGroup>
               <FormGroup>
-                <Label for="colorSelect">Select Color</Label>
+                <Label for="colorSelect" style={{ fontSize: "20px" }}>
+                  Select Color
+                </Label>
                 <div style={{ display: "flex", gap: "5px", marginTop: "5px" }}>
                   {items.colors &&
                     items.colors.map((color) => (
@@ -103,10 +85,7 @@ const ProductDetails = () => {
                           width: "30px",
                           height: "30px",
                           backgroundColor: color,
-                          border:
-                            selectedColor === color
-                              ? "2px solid black"
-                              : "none",
+                          border: selectedColor === color ? "2px solid black" : "none",
                         }}
                         onClick={() => setSelectedColor(color)}
                       />
@@ -115,33 +94,35 @@ const ProductDetails = () => {
               </FormGroup>
 
               <div style={{ display: "flex", alignItems: "center" }}>
-  <div >
-  <Button>Add to cart</Button>
-    <Button
-      onClick={decreaseQuantity}
-      style={{
-        backgroundColor: "white",
-        color: "black",
-        border: "white",
-      }}
-    >
-      -
-    </Button>
-    <span>{quantity}</span>
-    <Button
-      onClick={increaseQuantity}
-      style={{
-        backgroundColor: "white",
-        color: "black",
-        border: "white",
-      }}
-    >
-      +
-    </Button>
-  </div>
-  
-</div>
-
+                <div>
+                  <Button
+                    onClick={() => handleClick(items)}
+                  >
+                    Add to cart
+                  </Button>
+                  <Button
+                    onClick={decreaseQuantity}
+                    style={{
+                      backgroundColor: "white",
+                      color: "black",
+                      border: "white",
+                    }}
+                  >
+                    -
+                  </Button>
+                  <span>{quantity}</span>
+                  <Button
+                    onClick={increaseQuantity}
+                    style={{
+                      backgroundColor: "white",
+                      color: "black",
+                      border: "white",
+                    }}
+                  >
+                    +
+                  </Button>
+                </div>
+              </div>
             </CardBody>
           </Col>
         </Row>

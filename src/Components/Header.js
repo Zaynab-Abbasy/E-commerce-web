@@ -7,13 +7,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
+
+
 import React, { useState,useEffect,useRef } from "react";
 import "./Header.css";
 import Login from "./Auth/Login";
 
-const Header = () => {
+const Header = ({size }) => {
 
-  
+
+
   const [showLogin, setShowLogin] = useState(false);
 
   const toggleLogin = () => {
@@ -33,6 +36,7 @@ const Header = () => {
             alt="Logo"
             height={50}
             width={50}
+            
           />
 
           <button
@@ -49,7 +53,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="#" style={{paddingLeft:"50px"}}>
                   Home
                 </a>
               </li>
@@ -182,8 +186,21 @@ const Header = () => {
         <Link to="/login">
         <FontAwesomeIcon icon={faUser} className="icon" />
       </Link>
+      
         <FontAwesomeIcon icon={faHeart} className="icon" />
-        <FontAwesomeIcon icon={faCartShopping} className="icon" />
+        
+        <span>
+        <Link to="/cart">
+          <FontAwesomeIcon icon={faCartShopping} className="icon" />
+        </Link>
+      </span>
+      <span className=" badge rounded-pill"  style={{backgroundColor:"maroon"}}>
+        {size}
+        </span>
+        
+
+
+        
         {showLogin && <Login show={showLogin} handleClose={toggleLogin} />}
       </nav>
     </div>

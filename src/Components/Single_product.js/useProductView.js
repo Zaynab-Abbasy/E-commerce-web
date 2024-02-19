@@ -14,12 +14,12 @@ export const useProductView = () => {
   };
 
   const increaseQuantity = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setQuantity((prevQuantity) => prevQuantity + 1);
   };
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
-      setQuantity(prevQuantity => prevQuantity - 1);
+      setQuantity((prevQuantity) => prevQuantity - 1);
     }
   };
 
@@ -50,6 +50,6 @@ export const useProductView = () => {
     handleQuantityChange,
     increaseQuantity,
     decreaseQuantity,
-    setSelectedColor
+    setSelectedColor,
   };
 };

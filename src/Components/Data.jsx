@@ -15,6 +15,7 @@ const Data = [
       category: "Dining chairs",
       sizes:["6-person-dinning","4-person-dinning"],
     rating: 4.5,
+    amount:1
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const Data = [
     },
       category: "Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ const Data = [
     },
       category: "4-person-Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 4,
@@ -66,6 +69,7 @@ const Data = [
     },
       category: "6-person-Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 5,
@@ -83,6 +87,7 @@ const Data = [
     },
     category: "4-person-Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 6,
@@ -100,6 +105,7 @@ const Data = [
     },
     category: "Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 7,
@@ -117,6 +123,7 @@ const Data = [
     },
     category: "Dining chairs",
     rating: 4.2,
+    amount:1
   },
   {
     id: 8,
@@ -134,6 +141,7 @@ const Data = [
     },
     category: "Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 9,
@@ -151,6 +159,7 @@ const Data = [
     },
     category: "6-person-Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 10,
@@ -168,6 +177,7 @@ const Data = [
     },
     category: "Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 11,
@@ -185,6 +195,7 @@ const Data = [
     },
     category: "Dining chairs",
     rating: 4.2,
+    amount:1
   },
   {
     id: 12,
@@ -202,6 +213,7 @@ const Data = [
     },
     category: "4-person-Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 13,
@@ -219,6 +231,7 @@ const Data = [
     },
     category: "Dining Tables",
     rating: 4.2,
+    amount:1
   },
   {
     id: 14,
@@ -236,6 +249,7 @@ const Data = [
     },
     category: "Dining chairs",
      rating: 4.2,
+     amount:1
    },
    {
      id: 15,
@@ -253,6 +267,7 @@ const Data = [
     },
      category: "Dining Tables",
      rating: 4.2,
+     amount:1
    },
 ];
 export default Data;

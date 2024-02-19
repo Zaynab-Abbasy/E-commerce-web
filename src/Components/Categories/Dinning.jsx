@@ -3,7 +3,8 @@ import Data from "../Data";
 import Card from "./Card";
 import Buttons from "./Buttons";
 
-const Dinning = () => {
+
+const Dinning = ({handleClick}) => {
   const [items, setItems] = useState(Data);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6; // Number of items per page
@@ -63,7 +64,7 @@ const Dinning = () => {
           />
         </div>
       </div>
-      <Card items={currentItems} />
+      <Card items={currentItems} handleClick={handleClick} />
       <div className="row" style={{ backgroundColor: "white" }}>
         <ul className="pagination justify-content-center">
           {Array.from({ length: totalPages }, (_, index) => (

@@ -1,0 +1,113 @@
+
+
+*
+{
+margin:0;
+padding:0;
+
+}
+article{
+ width:60%;
+ margin:auto;
+ display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+}
+.cart_box img
+{
+    width:50px;
+    height:50px;
+
+}
+.cart_img
+{
+    display:flex;
+    width:400px;
+}
+
+.cart_img p {
+
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.cart_box{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    font-family: "Lora,serif";
+}
+.cart_box div :nth-child(2) button
+{
+padding: 5px 10px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.cart_box div :nth-child(3) button
+{
+padding: 5px 10px;
+font-weight: bold;
+letter-spacing: 2px;
+border:none;
+outline:none;
+color: black;
+background-color: beige;
+border-radius: 5px;
+cursor:pointer;
+
+}
+
+.cart_box div :nth-child(3) button:hover
+{
+background-color: maroon;
+}
+
+.cart_box div :nth-child(3) button:span
+{
+background-color: maroon;
+padding: 5px 10px;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.total
+{
+    display:flex;
+    justify-content: space-between;
+    font-family: "Lora,serif";
+}
+
+.total span :nth-child(1) 
+{
+    font-size: 2rem;
+    color:beige;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.total span :nth-child(2) 
+{
+    font-size: 2rem;
+    color:maroon;
+    font-weight: bold;
+    
+}
+.cart_box .quantitychange button {
+    padding: 5px 15px; /* Adjust the padding to make the buttons wider */
+    font-weight: bold;
+    margin-right: 5px;
+    width: 5px; /* Set the width of the buttons */
+    align-self: center;
+  }
+
+  .cart_box .remove button {
+    
+    padding: 5px 10px; 
+
+  }
+  

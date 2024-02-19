@@ -1,0 +1,104 @@
+
+.cart-container {
+        font-family: "Lora,serif";
+        padding: 20px;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto auto; /* Adjusted grid template rows */
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .cart-header {
+        font-family: "Lora,serif";
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .cart-content {
+        font-family: "Lora,serif";
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap to next row */
+        margin-top: 0px;
+        justify-content: start; /* Center cards horizontally */
+      }
+      
+      .card-wrapper {
+        margin: 10px; /* Adjust card wrapper margin */
+        display: flex; /* Display card details and remove icon horizontally */
+        align-items: center; /* Align items vertically */
+      }
+      
+      .card-wrapper > * {
+        margin-right: 10px; /* Add spacing between card details and remove icon */
+      }
+      
+      .empty-basket {
+        font-family: "Lora,serif";
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .custom-card-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      
+      .custom-card {
+        width: 1000px; /* Adjust the width as needed */
+      }
+      
+      .card-body-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      
+      .details-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Make the details wrapper take up the full width */
+      }
+      
+      .details-left {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .details-left > * {
+        margin-bottom: 20px; /* Add margin between each detail */
+      }
+      
+      .details-right {
+        margin-left: auto; /* Push delete icon to the right */
+      }
+      
+      .image-wrapper {
+        width: 100px; /* Adjust the width as needed */
+        margin-right: 20px; /* Add spacing between image and details */
+      }
+      
+      .image-wrapper img {
+        width: 100%;
+        height: auto;
+      }
+      .size
+      {
+        padding-right: 10px;
+        padding-left: 10px;
+        align-self: center;
+      }
+      .name
+      {
+        
+        padding-right: 10px;
+        padding-left: 10px;
+        align-self: center;
+      }
+      .quantity
+      {
+        
+        padding-right: 10px;
+        padding-left: 10px;
+        align-self: center;
+      }
